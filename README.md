@@ -8,4 +8,6 @@ RECAPTCHA_SITE_KEY=<SITE_KEY>
 
 RECAPTCHA_SECRET_KEY=<SECRET_KEY>
 
+source the ENV file
+
 i am using gem https://github.com/ambethia/recaptcha 
