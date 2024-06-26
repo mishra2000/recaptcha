@@ -1,0 +1,26 @@
+<%= form_with(model: post) do |form| %>
+  <% flash.each do |type, msg| %>
+    <div>
+      <%= msg %>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, required: true%>
+  </div>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title, required: true%>
+  </div>
+
+  <div class="field">
+    <%= form.label :content %>
+    <%= form.text_area :content, required: true%>
+  </div>
+  <%= recaptcha_tags(site_key: '6LeXBv4pAAAAACy0obxok5G2wGoB3mHr4rvtTLO-') %>
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
